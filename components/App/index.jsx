@@ -15,7 +15,10 @@ const App = () => {
 
   const onChange = (value) => {
     const searchString = value.trim();
-    if (searchString === "") return;
+    if (searchString === "") {
+      setFilter(null);
+      return;
+    }
 
     let filters = [];
     users.forEach((user) => {
