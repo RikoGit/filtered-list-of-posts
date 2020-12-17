@@ -1,0 +1,20 @@
+@import "../../constants.scss";
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #edf2f7;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  margin: 24px 0;
+
+  @media only screen and (max-width: $breakpointSmall) {
+    margin: 24px calc(#{$breakpointSmallMargin} + #{$postMarginLeft});
+  }
+
+  @media only screen and (max-width: $breakpointExtraSmall) {
+    margin: 24px calc(#{$breakpointExtraSmallMargin} + #{$postMarginLeft});
+  }
+}

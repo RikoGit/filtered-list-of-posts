@@ -1,0 +1,42 @@
+{
+  "name": "filtered-list-of-posts",
+  "version": "0.0.1",
+  "description": "filtered list of posts",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --config configs/webpack.config.js",
+    "start": "npm run build && node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RikoGit/filtered-list-of-posts.git"
+  },
+  "keywords": [
+    "react"
+  ],
+  "type": "module",
+  "author": "RikoGit",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RikoGit/filtered-list-of-posts/issues"
+  },
+  "homepage": "https://github.com/RikoGit/filtered-list-of-posts#readme",
+  "dependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.10",
+    "@babel/preset-react": "^7.12.10",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.0.1",
+    "express": "^4.17.1",
+    "sass": "^1.30.0",
+    "sass-loader": "^10.1.0",
+    "style-loader": "^2.0.0",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.10.1",
+    "webpack-cli": "^4.2.0"
+  }
+}

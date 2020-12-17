@@ -1,0 +1,58 @@
+@import "../../constants.scss";
+
+$filterHeight: 38px;
+$filterBorderColor: #d3d8de;
+$filterPaddingLeft: 41px;
+
+.root {
+  margin: auto;
+  padding: 0 0 0 $filterPaddingLeft;
+  width: 350px;
+  height: $filterHeight;
+  position: relative;
+  box-sizing: border-box;
+  background: #fff;
+  border-radius: $borderRadius;
+
+  @media only screen and (max-width: $breakpointSmall) {
+    width: 100%;
+  }
+}
+.root::after {
+  content: "";
+  width: $filterPaddingLeft;
+  height: $filterHeight;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: $borderRadius 0 0 $borderRadius;
+  border-width: 1px 0 1px 1px;
+  border-style: solid;
+  border-color: $filterBorderColor;
+  background: url("../../docs/images/search_icon.png") 50% 50% no-repeat;
+  background-size: 18px 18px;
+  box-sizing: border-box;
+}
+.input {
+  margin: 0;
+  padding: 0 11px;
+  width: 100%;
+  font-size: 16px;
+  line-height: 16px;
+  color: #7c858d;
+  height: 100%;
+  border: none;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 1px solid $filterBorderColor;
+  border-radius: 0 $borderRadius $borderRadius 0;
+  outline: none;
+}
+.input:focus,
+.input:active {
+  border-color: #8ec3ff;
+  box-shadow: 0px 0px 0px 3px #b6d4fa;
+  outline: none;
+}
+.input:hover {
+}
